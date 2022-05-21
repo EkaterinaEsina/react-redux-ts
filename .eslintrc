@@ -1,0 +1,45 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier",
+        "react-hooks"
+    ],
+    "rules": {
+        "no-use-before-define": "error",
+        "eol-last": "off",
+        "indent":[
+            "error",
+            2
+        ],
+        "quotes":[
+            "error",
+            "single"
+        ],
+        "semi":[
+            "error",
+            "always"
+        ],
+        "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/function-component-definition": [2, {"namedComponents": ["function-declaration","function-expression", "arrow-function"]}]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
